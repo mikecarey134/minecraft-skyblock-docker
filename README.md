@@ -1,6 +1,3 @@
-Sure! Here’s the README in proper Markdown format:
-
-````markdown
 # Skyblock Docker Server
 
 This project runs a Minecraft Skyblock server in Docker using **Docker Compose**. It supports easy world resets, configurable memory, and custom container names for multi-server setups.

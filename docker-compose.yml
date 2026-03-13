@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  skyblock:
+    container_name: "${CUSTOMER_NAME:-skyblock-server}"
+    build: .
+    restart: unless-stopped
+
+    ports:
+      - "${PORTS:-25570:25570}"
+
+    environment:
+      RESET_WORLD: "${RESET_WORLD:-false}"
+      MAX_MEMORY: "${MAX_MEMORY:-1G}"
+
+    volumes:
+      - ./skyblock-data:/server
+
+    stdin_open: true
+    tty: true
+
+volumes:
+  skyblock-data:

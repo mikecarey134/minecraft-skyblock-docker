@@ -28,7 +28,7 @@ if [ ! -d "/server/skyblock" ] || [ "$RESET_WORLD" = "true" ]; then
     cp /opt/bootstrap/skyblock.zip /server/
     cp /opt/bootstrap/server.properties /server/
     cp /opt/bootstrap/server.jar /server/
-
+    cp /opt/server-icon.png /server/
     echo "Extracting Skyblock world"
     unzip -o skyblock.zip -d /server/skyblock
     rm skyblock.zip

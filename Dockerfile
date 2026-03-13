@@ -7,6 +7,7 @@ COPY skyblock.zip /opt/bootstrap/
 COPY server.properties /opt/bootstrap/
 COPY server.jar /opt/bootstrap/
 COPY entrypoint.sh /opt/entrypoint.sh
+COPY server-icon.png /opt/
 
 RUN apt update && apt install unzip && mkdir /server/skyblock
 
